@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIEmptyView" customModule="Loodos_Case" customModuleProvider="target">
+            <connections>
+                <outlet property="animContainerView" destination="l2Q-jv-ne6" id="3wm-fc-smg"/>
+                <outlet property="infoLabel" destination="AIu-rO-Dao" id="III-kM-5M6"/>
+                <outlet property="showMeButton" destination="67a-ow-NT5" id="g8y-aP-b6Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="546"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WZy-TD-juz">
+                    <rect key="frame" x="12" y="12" width="333" height="422.66666666666669"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2Q-jv-ne6" userLabel="AnimContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="333"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="l2Q-jv-ne6" secondAttribute="height" multiplier="1:1" id="xIH-Fb-oFc"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lütfen bilgi almak istediğiniz film için arama yapınız!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIu-rO-Dao">
+                            <rect key="frame" x="0.0" y="345" width="333" height="40.666666666666686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWV-qI-Qjp">
+                            <rect key="frame" x="0.0" y="397.66666666666669" width="333" height="25"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67a-ow-NT5">
+                                    <rect key="frame" x="103.33333333333334" y="0.0" width="126.33333333333334" height="25"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Örnek Göster"/>
+                                    <connections>
+                                        <action selector="showMeButtonTapped:" destination="-1" eventType="touchUpInside" id="VSx-wy-s2h"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="1mD-yX-RUm"/>
+                                <constraint firstItem="67a-ow-NT5" firstAttribute="height" secondItem="OWV-qI-Qjp" secondAttribute="height" id="K24-g7-XcM"/>
+                                <constraint firstItem="67a-ow-NT5" firstAttribute="centerX" secondItem="OWV-qI-Qjp" secondAttribute="centerX" id="bNg-Yb-pHa"/>
+                                <constraint firstItem="67a-ow-NT5" firstAttribute="centerY" secondItem="OWV-qI-Qjp" secondAttribute="centerY" id="scC-tq-YU9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WZy-TD-juz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="Vcr-Ka-wxK"/>
+                <constraint firstAttribute="trailing" secondItem="WZy-TD-juz" secondAttribute="trailing" constant="12" id="lLv-Hv-bfd"/>
+                <constraint firstItem="WZy-TD-juz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="xjA-2h-iaP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-26.717557251908396" y="96.478873239436624"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
